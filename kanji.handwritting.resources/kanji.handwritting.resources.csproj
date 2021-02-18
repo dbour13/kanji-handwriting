@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="KanjiVG\kanji.zip" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="KanjiVG\kanji.zip" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Svg" Version="3.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="KanjiVG\kanji.zip" />
+  </ItemGroup>
+
+</Project>
